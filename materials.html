@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="./assets/js/script.js"></script>
+</head>
+<body>
+<div class="preloader" id="preloader" role="status" aria-label="Loading">
+  <div class="preloader-inner">
+    <span class="brand"><b>S &amp; B</b><span>Design Limited</span></span>
+    <span class="preloader-bar" aria-hidden="true"><i></i></span>
+  </div>
+</div>
+<x-dc>
+<helmet>
+<title>Galaxy Flexible Panel | S &amp; B Design Limited</title>
+<meta name="description" content="Eco-friendly composite wall, ceiling and decking panels in wood grain, cloth, stone, solid colour and metal textures.">
+</helmet>
+<div class="page">
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><b>S &amp; B</b><span>Design Limited</span></a>
+      <nav class="nav only-desk" aria-label="Primary">
+        <a href="./">Home</a><a href="about">About</a><a href="materials" aria-current="page">Materials</a><a href="lighting">Lighting</a><a href="smart-building">Smart Building</a>
+      </nav>
+      <div>
+        <a class="btn header-cta only-desk" href="contact">Contact</a>
+        <button class="menu-btn only-mob" type="button" onClick="{{ openMenu }}" aria-label="Open menu" aria-controls="site-menu">Menu <i></i></button>
+      </div>
+    </div>
+  </header>
+
+  <sc-if value="{{ menuOpen }}">
+    <div class="menu" id="site-menu">
+      <div class="menu-top">
+        <span class="brand"><b>S &amp; B</b><span>Design Limited</span></span>
+        <button class="menu-close" type="button" onClick="{{ closeMenu }}" aria-label="Close menu">&times;</button>
+      </div>
+      <a href="./" onClick="{{ closeMenu }}">Home</a><a href="about" onClick="{{ closeMenu }}">About</a><a href="materials" onClick="{{ closeMenu }}">Materials</a><a href="lighting" onClick="{{ closeMenu }}">Lighting</a><a href="smart-building" onClick="{{ closeMenu }}">Smart Building</a>
+      <a class="btn" href="contact" onClick="{{ closeMenu }}">Contact Us <span>&rarr;</span></a>
+    </div>
+  </sc-if>
+
+  <main id="top">
+
+    <section class="hero hero--page">
+      <div class="wrap">
+        <div class="hero-text">
+          <p class="eyebrow">Green material &middot; Quality living</p>
+          <h1 class="display">Galaxy Flexible Panel</h1>
+          <p class="lead">Luxury decking, ceiling and wall panels &amp; more green building materials. The Wild Nature Series is inspired by nature and reproduces its textures for a realistic experience &mdash; while staying light, flexible and suitable for both indoor and outdoor covering.</p>
+          <div class="actions"><a class="btn" href="contact">Request the Catalogue <span>&rarr;</span></a><a class="link" href="#collections">View Collections <span>&rarr;</span></a></div>
+        </div>
+        <div class="hero-media"><img src="assets/images/materials/wood-hallway.jpg" alt="Wood-grain composite wall panels in an entrance hall" loading="eager" onError="{{ imgFail }}"></div>
+      </div>
+    </section>
+    <section class="section section--tint">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Why Galaxy Flexible Panel</p>
+          <h2 class="h2">Eco-friendly performance with the look of natural materials.</h2>
+        </div>
+        <div data-reveal><ul class="chips"><li>Eco &amp; recyclable</li><li>Rot proof</li><li>Natural colour</li><li>No toxic release</li><li>No painting needed &amp; paintable</li><li>Easy to install</li><li>Water resistant</li><li>Flame retardant</li><li>Low maintenance</li></ul></div>
+        <div class="grid-3 mt-l">
+          <div data-reveal><figure class="media r-1x1 media--contain media--white"><img src="assets/images/materials/properties.jpg" alt="Galaxy Flexible Panel properties" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div data-reveal><figure class="media r-1x1 media--contain media--white"><img src="assets/images/materials/texture-circles.jpg" alt="Stone, terrazzo and solid colour textures" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div data-reveal><figure class="media r-1x1 media--contain media--white"><img src="assets/images/materials/cover-panel.jpg" alt="Galaxy Flexible Panel wood-grain wall" loading="lazy" onError="{{ imgFail }}"></figure></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="collections">
+      <div class="wrap">
+        <article class="collection" id="wood-grain-texture">
+          <div class="collection-text" data-reveal>
+            <span class="num">01</span>
+            <h2 class="h2">Wood Grain Texture</h2>
+            <p class="body">Surface technology brings composite metal, leather, mirror, fabric and other special textures. From the original colour of wood grain to bolder tones that express personality, its wide applicability is loved by designers.</p><p class="body">Natural wood grains move like life itself &mdash; undulating, flowing textures that bring the vitality of nature into the space.</p>
+            <p class="small mt-m">Featured finishes: Harvest Ebony, Coastal Elmwood, Camden Oak, Graceland Oak, Ocean Ebony, Canary Teak.</p>
+          </div>
+          <div class="gallery gallery--auto"><div data-reveal class="span2"><figure class="media r-3x4 "><img src="assets/images/materials/wood-tv-wall.jpg" alt="Wood-grain slat feature wall" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-1x1 "><img src="assets/images/materials/wood-kitchen.jpg" alt="Walnut wood-grain kitchen joinery" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-1x1 "><img src="assets/images/materials/wood-bedroom.jpg" alt="Bedroom with dark wood-grain wall" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-4x3 "><img src="assets/images/materials/wood-dining.jpg" alt="Dining room with oak wood-grain panels" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/wood-reception.jpg" alt="Reception with wood-grain wall panels" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/wood-tea-room.jpg" alt="Tea room with wood-grain panels" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/wood-sofa.jpg" alt="Living room with light wood-grain wall" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/wood-living-pendant.jpg" alt="Double-height living room with wood panels" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/wood-dining-oak.jpg" alt="Oak joinery dining room" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class="span2"><figure class="media r-3x4 "><img src="assets/images/materials/wood-hallway.jpg" alt="Wood-panelled hallway" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+        </article>
+        <article class="collection" id="cloth-texture">
+          <div class="collection-text" data-reveal>
+            <span class="num">02</span>
+            <h2 class="h2">Cloth Texture</h2>
+            <p class="body">Combining the surface feel of natural cotton and linen with the warm, soft colour of fabric. The orderly warp-and-weft arrangement makes the vision fuller, and the casual, elegant temperament gives life a warm and comfortable feeling.</p>
+            <p class="small mt-m">Featured finishes: Paulaner, Khaki Linen, Baikal Grey.</p>
+          </div>
+          <div class="gallery gallery--auto"><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/cloth-wall.jpg" alt="Linen-texture wall panel with timber slats" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-4x3 "><img src="assets/images/materials/cloth-living.jpg" alt="Living room with cloth-texture wall panels" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/cloth-lounge.jpg" alt="Lounge with linen-texture walls" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/cloth-sofa.jpg" alt="Sofa corner with cloth-texture panels" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/cloth-vanity.jpg" alt="Vanity with cloth-texture wall" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/cloth-sculpture.jpg" alt="Sculpture lamp against cloth-texture panels" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+        </article>
+        <article class="collection" id="stone-texture">
+          <div class="collection-text" data-reveal>
+            <span class="num">03</span>
+            <h2 class="h2">Stone Texture</h2>
+            <p class="body">Keeping up with the times, we reproduce the inherent texture and charm of stone &mdash; a tough surface with a smart feel. Stone patterns of different sizes are scattered in an orderly manner, enriching the surface while adding comfort. Rough stones, art and ink-painting designs are both fashionable and luxurious.</p><p class="body">Using colour systems of different saturation, the building integrates into its surroundings to create distinct scenes in the living space.</p>
+            <p class="small mt-m">Featured finishes: Light Terrazzo, Carrara Marble, Puppe Grey, Baikal, Gardenia Grey.</p>
+          </div>
+          <div class="gallery gallery--auto"><div data-reveal class="span2"><figure class="media r-3x4 "><img src="assets/images/materials/stone-terrazzo.jpg" alt="Light terrazzo stone-texture walls" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-4x3 "><img src="assets/images/materials/stone-marble-living.jpg" alt="Carrara marble-texture feature wall" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-4x3 "><img src="assets/images/materials/stone-grey-living.jpg" alt="Grey stone-texture living room" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/stone-lounge.jpg" alt="Terrazzo-texture lounge" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/stone-bathroom.jpg" alt="Bathroom with grey stone-texture walls" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/stone-niche.jpg" alt="Marble-texture feature niche" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class="span2"><figure class="media r-3x4 "><img src="assets/images/materials/stone-dark-living.jpg" alt="Dark stone-texture living room" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+        </article>
+        <article class="collection" id="solid-color">
+          <div class="collection-text" data-reveal>
+            <span class="num">04</span>
+            <h2 class="h2">Solid Color</h2>
+            <p class="body">Using modern nanotechnology, the surface achieves a delicate, smooth skin-like touch. Many colours to choose from suit a variety of styles, with superior stain, scratch and wear resistance, a long service life and high colour fastness.</p>
+            <p class="small mt-m">Featured finishes: Pearl White, Goblin Blue, Quiet Morandi, Croma Brown, Kruger Red, Dark Pest.</p>
+          </div>
+          <div class="gallery gallery--auto"><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/solid-entry.jpg" alt="Pearl white solid-colour slat entry" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/solid-green.jpg" alt="Goblin blue solid-colour wall" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-1x1 "><img src="assets/images/materials/solid-maroon-study.jpg" alt="Kruger red solid-colour study" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-1x1 "><img src="assets/images/materials/solid-navy-bedroom.jpg" alt="Dark pine solid-colour bedroom" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/solid-tv.jpg" alt="Solid-colour TV wall" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/solid-living.jpg" alt="Living room with solid-colour panels" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/solid-green-office.jpg" alt="Home office with green solid-colour wall" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/solid-bedroom.jpg" alt="Bedroom with grey solid-colour headboard wall" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/solid-dining-navy.jpg" alt="Dining corner with navy solid-colour wall" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+        </article>
+        <article class="collection" id="metal-texture">
+          <div class="collection-text" data-reveal>
+            <span class="num">05</span>
+            <h2 class="h2">Metal Texture</h2>
+            <p class="body">The soft, diffuse reflection of metal interacts with the colour of the space. Simple, tough lines full of modernity create a space that is both sophisticated and forward-looking. The material is light, saves time and labour, and the installed effect is extremely striking.</p><p class="body">Balancing utility and aesthetics &mdash; from brushed silver to laser gold, with brass details that add a refined vintage glow.</p>
+            <p class="small mt-m">Featured finishes: Oxidation White, Clear Mirror, Meteor Gold, Meteor Grey, Fourwork Gold, Laser Gold, Pillar Silver.</p>
+          </div>
+          <div class="gallery gallery--auto"><div data-reveal class=""><figure class="media r-4x3 "><img src="assets/images/materials/metal-wave.jpg" alt="Brushed metal-texture wall panels" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/metal-gold.jpg" alt="Laser gold metal-texture wall" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/metal-stair.jpg" alt="Meteor grey metal-texture staircase" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-4x3 "><img src="assets/images/materials/metal-store.jpg" alt="Retail store clad in metal-texture panels" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/metal-tunnel.jpg" alt="Curved metal-texture entrance" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/metal-gold-store.jpg" alt="Store counter in gold metal texture" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/metal-astronaut.jpg" alt="Curved metal-texture wall with sculpture" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/metal-black-bar.jpg" alt="Black metal-texture bar" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/metal-corridor.jpg" alt="Bronze metal-texture corridor" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/metal-salon.jpg" alt="Salon with metal-texture columns" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/metal-neon.jpg" alt="Retail corridor with metal-texture walls" loading="lazy" onError="{{ imgFail }}"></figure></div><div data-reveal class=""><figure class="media r-3x4 "><img src="assets/images/materials/metal-sculpture.jpg" alt="Lobby with metal-texture wall and sculpture" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Production process</p>
+          <h2 class="h2">Seven steps from raw material to delivery.</h2>
+        </div>
+        <div class="steps" data-reveal>
+          <div class="step"><b>01</b><p>Raw materials are placed into the mixer and mixed evenly.</p></div>
+          <div class="step"><b>02</b><p>Pellets are extruded from the pelletizer at a formulated temperature.</p></div>
+          <div class="step"><b>03</b><p>Following formulations, different pellets are mixed evenly.</p></div>
+          <div class="step"><b>04</b><p>The profile is extruded through a mould.</p></div>
+          <div class="step"><b>05</b><p>After cooling, profiles solidify into the shape of the mould.</p></div>
+          <div class="step"><b>06</b><p>Profiles are cut to standard lengths or customised to customer requirements.</p></div>
+          <div class="step"><b>07</b><p>Package &amp; deliver.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div data-reveal>
+          <p class="eyebrow">Greenzone products</p>
+          <h2 class="h2">A full colour library across six texture families.</h2>
+          <p class="body mt-m">Choose from metal, wood grain, stone, solid colour, leather and cloth textures, each with dozens of finishes for walls, ceilings and joinery.</p>
+          <div class="mt-m"><ul class="chips"><li>Metal</li><li>Wood Grain</li><li>Stone</li><li>Solid Color</li><li>Leather</li><li>Cloth</li></ul></div>
+          <p class="small mt-m">Textures shown are approximate representations only and vary with the application environment. Request the full catalogue range from our sales representatives.</p>
+          <a class="btn mt-m" href="contact">Request the Catalogue <span>&rarr;</span></a>
+        </div>
+        <div class="swatches" data-reveal>
+          <figure><figure class="media r-4x3 media--contain media--white"><img src="assets/images/materials/swatches-metal.jpg" alt="Metal texture swatches" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Metal</figcaption></figure>
+          <figure><figure class="media r-4x3 media--contain media--white"><img src="assets/images/materials/swatches-wood.jpg" alt="Wood grain texture swatches" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Wood grain</figcaption></figure>
+          <figure><figure class="media r-4x3 media--contain media--white"><img src="assets/images/materials/swatches-stone.jpg" alt="Stone texture swatches" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Stone</figcaption></figure>
+          <figure><figure class="media r-4x3 media--contain media--white"><img src="assets/images/materials/swatches-solid.jpg" alt="Solid colour swatches" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Solid colour</figcaption></figure>
+          <figure><figure class="media r-4x3 media--contain media--white"><img src="assets/images/materials/swatches-leather.jpg" alt="Leather texture swatches" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Leather</figcaption></figure>
+          <figure><figure class="media r-4x3 media--contain media--white"><img src="assets/images/materials/swatches-cloth.jpg" alt="Cloth texture swatches" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Cloth</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div data-reveal>
+          <h2 class="h2">Specify Galaxy Flexible Panel for your next project.</h2>
+          <p>We provide the materials together with accessories, technical specifications and easy-to-follow installation guides &mdash; so even complex projects run efficiently.</p>
+        </div>
+        <a class="btn btn--light" data-reveal href="contact">Contact Us <span>&rarr;</span></a>
+      </div>
+    </section>
+  </main>
+
+  <sc-if value="{{ showTop }}">
+    <a class="to-top" href="#top" onClick="{{ toTop }}" aria-label="Back to top"><span aria-hidden="true">&uarr;</span></a>
+  </sc-if>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./"><b>S &amp; B</b><span>Design Limited</span></a>
+          <p class="mt-m">Innovation Materials, Timeless Spaces.<br>Architecture, interior design, materials and smart building solutions.</p>
+        </div>
+        <div>
+          <h4>Hong Kong</h4>
+          <p>10/F Room 1001, Bonham Center,<br>79&ndash;85 Bonham Strand,<br>Sheung Wan, Hong Kong</p>
+          <p class="mt-s"><a href="mailto:samuelng@sandb.hk">samuelng@sandb.hk</a></p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul><li><a href="./">Home</a></li><li><a href="about">About</a></li><li><a href="materials">Materials</a></li><li><a href="lighting">Lighting</a></li><li><a href="smart-building">Smart Building</a></li><li><a href="contact">Contact</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; S &amp; B Design Limited. All rights reserved.</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440}}">
+const Component = window.GlyphLogic(DCLogic);
+</script>
+</body>
+</html>

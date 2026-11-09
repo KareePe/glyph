@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="./assets/js/script.js"></script>
+</head>
+<body>
+<div class="preloader" id="preloader" role="status" aria-label="Loading">
+  <div class="preloader-inner">
+    <span class="brand"><b>S &amp; B</b><span>Design Limited</span></span>
+    <span class="preloader-bar" aria-hidden="true"><i></i></span>
+  </div>
+</div>
+<x-dc>
+<helmet>
+<title>About | S &amp; B Design Limited</title>
+<meta name="description" content="S &amp; B Design Limited combines design excellence with advanced material solutions, a premium manufacturing network and end-to-end project support.">
+</helmet>
+<div class="page">
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><b>S &amp; B</b><span>Design Limited</span></a>
+      <nav class="nav only-desk" aria-label="Primary">
+        <a href="./">Home</a><a href="about" aria-current="page">About</a><a href="materials">Materials</a><a href="lighting">Lighting</a><a href="smart-building">Smart Building</a>
+      </nav>
+      <div>
+        <a class="btn header-cta only-desk" href="contact">Contact</a>
+        <button class="menu-btn only-mob" type="button" onClick="{{ openMenu }}" aria-label="Open menu" aria-controls="site-menu">Menu <i></i></button>
+      </div>
+    </div>
+  </header>
+
+  <sc-if value="{{ menuOpen }}">
+    <div class="menu" id="site-menu">
+      <div class="menu-top">
+        <span class="brand"><b>S &amp; B</b><span>Design Limited</span></span>
+        <button class="menu-close" type="button" onClick="{{ closeMenu }}" aria-label="Close menu">&times;</button>
+      </div>
+      <a href="./" onClick="{{ closeMenu }}">Home</a><a href="about" onClick="{{ closeMenu }}">About</a><a href="materials" onClick="{{ closeMenu }}">Materials</a><a href="lighting" onClick="{{ closeMenu }}">Lighting</a><a href="smart-building" onClick="{{ closeMenu }}">Smart Building</a>
+      <a class="btn" href="contact" onClick="{{ closeMenu }}">Contact Us <span>&rarr;</span></a>
+    </div>
+  </sc-if>
+
+  <main id="top">
+
+    <section class="hero hero--page">
+      <div class="wrap">
+        <div class="hero-text">
+          <p class="eyebrow">About S &amp; B Design</p>
+          <h1 class="display">Design excellence,<br>delivered end to end.</h1>
+          <p class="lead">As a leading architecture and interior design practice in Hong Kong, S &amp; B Design Limited creates sophisticated, functional spaces &mdash; and is a trusted partner for premium composite materials, offering complete design-to-execution support for modern, waterproof, durable and eco-friendly environments.</p>
+          
+        </div>
+        <div class="hero-media"><img src="assets/images/materials/stone-marble-living.jpg" alt="Living room with marble-texture feature wall" loading="eager" onError="{{ imgFail }}"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap split">
+        <div data-reveal>
+          <p class="eyebrow">What we do</p>
+          <h2 class="h2">Architecture, interior design and fit-out of the highest quality.</h2>
+          <p class="body mt-m">We provide architecture, interior design and fit-out solutions to clients across Hong Kong, Mainland China, Thailand, the United Kingdom and other international markets.</p>
+          <p class="body">Our projects cover a wide range of high-end developments: commercial buildings, offices, hotels, retail spaces, residential properties, villas &amp; houses, and exhibition installations.</p>
+        </div>
+        <div data-reveal><figure class="media r-4x3 "><img src="assets/images/materials/supply-collage.jpg" alt="Collage of S &amp; B projects, showrooms and production" loading="lazy" onError="{{ imgFail }}"></figure></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Showroom &amp; team</p>
+          <h2 class="h2">From our showroom to your site.</h2>
+        </div>
+        <div class="grid-3">
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/materials/showroom-facade.jpg" alt="S &amp; B showroom facade with timber slats" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/materials/team.jpg" alt="The S &amp; B team in the showroom" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/materials/showroom-visit.jpg" alt="Clients visiting the material showroom" loading="lazy" onError="{{ imgFail }}"></figure></div>
+        </div>
+        <div class="grid-2 mt-m">
+          <div data-reveal><figure class="media media--natural "><img src="assets/images/materials/projects-strip-1.jpg" alt="Selected project photography" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div data-reveal><figure class="media media--natural "><img src="assets/images/materials/projects-strip-2.jpg" alt="Selected project photography" loading="lazy" onError="{{ imgFail }}"></figure></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Our strategic partners &amp; supply chain</p>
+          <h2 class="h2">Four strengths behind every project.</h2>
+        </div>
+        <div class="features"><div class="feature" data-reveal><h3>Original innovation &amp; R&amp;D team</h3><p>We work exclusively with professional design and R&amp;D teams from Europe, Japan, Singapore and China &mdash; partners awarded hundreds of international design patents and innovation awards, who keep pushing the boundaries of material technology.</p></div><div class="feature" data-reveal><h3>Efficient production capacity</h3><p>Through carefully selected manufacturing partners we command over 300,000 m&sup2; of production per month across advanced lines for indoor and outdoor composites, sintered stone and premium architectural finishes &mdash; enabling faster lead times and reliable delivery.</p></div><div class="feature" data-reveal><h3>A complete product &amp; solution system</h3><p>More than 600 varieties of composite materials and architectural solutions: Eco-Board wood composites, sintered stone, invisible door systems, waterproof panels, decorative surfaces, wall cladding, ceiling systems, custom furniture components and full outdoor living solutions &mdash; with accessories, technical specifications and installation guides.</p></div><div class="feature" data-reveal><h3>Quality products &amp; services</h3><p>Driven by the philosophy &ldquo;Innovation Materials, Timeless Spaces&rdquo;, we provide end-to-end service from material selection and custom design coordination to cross-border logistics and on-site installation support.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split split--top">
+        <div data-reveal>
+          <p class="eyebrow">Strategic vendor partnership</p>
+          <h2 class="h2">A premium network of industry-leading manufacturers.</h2>
+          <p class="body mt-m">Our strategic partners bring unparalleled technical strength and environmental credentials to your projects.</p>
+        </div>
+        <div data-reveal>
+          <div class="features"><div class="feature" data-reveal><h3>Innovative material access</h3><p>Direct integration with manufacturers holding over 200 patents in design and utility innovation.</p></div><div class="feature" data-reveal><h3>Elite global certifications</h3><p>Materials backed by premium international standards, including Singapore Green Certificate, FSC and CE (Europe).</p></div><div class="feature" data-reveal><h3>Certified sustainability</h3><p>Products sourced from ISO 14025 environmentally certified enterprises and Top 10 Eco-Green material manufacturers.</p></div><div class="feature" data-reveal><h3>Architect-approved quality</h3><p>A proven track record, with materials recommended and specified by leading global architects and designers.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="wrap split">
+        <div data-reveal>
+          <p class="eyebrow">Environmental protection</p>
+          <p class="quote">Low carbon and green products are a core of our social responsibility.</p>
+          <p class="body mt-m">Combining eco-friendly materials with architectural beauty has always been S &amp; B&rsquo;s responsibility to the world. We not only advocate environmental friendliness &mdash; we improve green performance through practical action, from recyclable composites to energy-saving building systems.</p>
+          <div class="mt-m"><ul class="chips"><li>Recyclable</li><li>No toxic release</li><li>Singapore Green Certificate</li><li>FSC</li><li>CE</li><li>RoHS</li><li>ISO</li></ul></div>
+        </div>
+        <div data-reveal><figure class="media r-3x4 media--contain media--white"><img src="assets/images/materials/tree-globe.jpg" alt="A tree growing on planet Earth" loading="lazy" onError="{{ imgFail }}"></figure></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">What we offer</p>
+          <h2 class="h2">One partner for materials, lighting and smart building technology.</h2>
+        </div>
+        <div class="grid-3">
+          <a class="card" data-reveal href="materials"><figure class="media r-4x3 "><img src="assets/images/materials/metal-stair.jpg" alt="Metal-texture composite staircase" loading="lazy" onError="{{ imgFail }}"></figure><div class="card-body"><h3 class="h3">Galaxy Flexible Panel</h3><p class="body">Luxury decking, ceiling, wall panels and more green building materials.</p><span class="link">Materials <span>&rarr;</span></span></div></a>
+          <a class="card" data-reveal href="lighting"><figure class="media r-4x3 "><img src="assets/images/lighting/office-3.jpg" alt="Office with linear LED lighting" loading="lazy" onError="{{ imgFail }}"></figure><div class="card-body"><h3 class="h3">Premium LED Lighting</h3><p class="body">With our lighting partner Join Planning Co. Ltd &mdash; &ldquo;Illuminating Excellence&rdquo;.</p><span class="link">Lighting <span>&rarr;</span></span></div></a>
+          <a class="card" data-reveal href="smart-building"><figure class="media r-4x3 media--contain"><img src="assets/images/smart/wsmart-dashboard.jpg" alt="WSmart platform dashboard" loading="lazy" onError="{{ imgFail }}"></figure><div class="card-body"><h3 class="h3">Smart Building &amp; AI Vision</h3><p class="body">Hybrid BMS on the WSmart platform, AI people counting and museum asset control.</p><span class="link">Smart Building <span>&rarr;</span></span></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div data-reveal>
+          <h2 class="h2">Let&rsquo;s build timeless spaces together.</h2>
+          <p>Tell us about your project &mdash; from material selection to smart-building integration, our team in Hong Kong will come back with how we would approach it.</p>
+        </div>
+        <a class="btn btn--light" data-reveal href="contact">Contact Us <span>&rarr;</span></a>
+      </div>
+    </section>
+  </main>
+
+  <sc-if value="{{ showTop }}">
+    <a class="to-top" href="#top" onClick="{{ toTop }}" aria-label="Back to top"><span aria-hidden="true">&uarr;</span></a>
+  </sc-if>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./"><b>S &amp; B</b><span>Design Limited</span></a>
+          <p class="mt-m">Innovation Materials, Timeless Spaces.<br>Architecture, interior design, materials and smart building solutions.</p>
+        </div>
+        <div>
+          <h4>Hong Kong</h4>
+          <p>10/F Room 1001, Bonham Center,<br>79&ndash;85 Bonham Strand,<br>Sheung Wan, Hong Kong</p>
+          <p class="mt-s"><a href="mailto:samuelng@sandb.hk">samuelng@sandb.hk</a></p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul><li><a href="./">Home</a></li><li><a href="about">About</a></li><li><a href="materials">Materials</a></li><li><a href="lighting">Lighting</a></li><li><a href="smart-building">Smart Building</a></li><li><a href="contact">Contact</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; S &amp; B Design Limited. All rights reserved.</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440}}">
+const Component = window.GlyphLogic(DCLogic);
+</script>
+</body>
+</html>

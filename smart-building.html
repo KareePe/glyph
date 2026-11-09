@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="./assets/js/script.js"></script>
+</head>
+<body>
+<div class="preloader" id="preloader" role="status" aria-label="Loading">
+  <div class="preloader-inner">
+    <span class="brand"><b>S &amp; B</b><span>Design Limited</span></span>
+    <span class="preloader-bar" aria-hidden="true"><i></i></span>
+  </div>
+</div>
+<x-dc>
+<helmet>
+<title>Smart Building &amp; AI Vision | S &amp; B Design Limited</title>
+<meta name="description" content="Hybrid BMS combining Modbus, BACnet and LoRaWAN on the WSmart platform, plus AI people counting and museum asset control.">
+</helmet>
+<div class="page">
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><b>S &amp; B</b><span>Design Limited</span></a>
+      <nav class="nav only-desk" aria-label="Primary">
+        <a href="./">Home</a><a href="about">About</a><a href="materials">Materials</a><a href="lighting">Lighting</a><a href="smart-building" aria-current="page">Smart Building</a>
+      </nav>
+      <div>
+        <a class="btn header-cta only-desk" href="contact">Contact</a>
+        <button class="menu-btn only-mob" type="button" onClick="{{ openMenu }}" aria-label="Open menu" aria-controls="site-menu">Menu <i></i></button>
+      </div>
+    </div>
+  </header>
+
+  <sc-if value="{{ menuOpen }}">
+    <div class="menu" id="site-menu">
+      <div class="menu-top">
+        <span class="brand"><b>S &amp; B</b><span>Design Limited</span></span>
+        <button class="menu-close" type="button" onClick="{{ closeMenu }}" aria-label="Close menu">&times;</button>
+      </div>
+      <a href="./" onClick="{{ closeMenu }}">Home</a><a href="about" onClick="{{ closeMenu }}">About</a><a href="materials" onClick="{{ closeMenu }}">Materials</a><a href="lighting" onClick="{{ closeMenu }}">Lighting</a><a href="smart-building" onClick="{{ closeMenu }}">Smart Building</a>
+      <a class="btn" href="contact" onClick="{{ closeMenu }}">Contact Us <span>&rarr;</span></a>
+    </div>
+  </sc-if>
+
+  <main id="top">
+
+    <section class="hero hero--page">
+      <div class="wrap">
+        <div class="hero-text">
+          <p class="eyebrow">WSmart Platform &middot; LoRaWAN&reg; &middot; AI Vision</p>
+          <h1 class="display">Smart Building<br>&amp; AI Vision</h1>
+          <p class="lead">A hybrid Building Management System that combines wired Modbus and BACnet with wireless LoRaWAN&reg; on one platform &mdash; plus AI camera solutions for retail analytics and museum asset security.</p>
+          <div class="actions"><a class="btn" href="contact">Book a Consultation <span>&rarr;</span></a><a class="link" href="#ai-vision">AI Vision <span>&rarr;</span></a></div>
+        </div>
+        <div class="hero-media"><img src="assets/images/smart/building.jpg" alt="Looking up at glass office towers" loading="eager" onError="{{ imgFail }}"></div>
+      </div>
+    </section>
+    <section class="section" id="bms">
+      <div class="wrap split split--wide">
+        <div data-reveal>
+          <p class="eyebrow">Hybrid BMS</p>
+          <h2 class="h2">Wired reliability. Wireless flexibility.</h2>
+          <p class="body mt-m">Wired protocols deliver rock-solid, low-latency performance for core and critical equipment. LoRaWAN&reg; wireless adds flexible, low-power sensors and devices for extended coverage, easy expansion and cost-effective retrofitting.</p>
+          <p class="body">The hybrid approach is especially practical for retrofits, smart buildings, campuses and facilities in dense urban areas, where full rewiring is expensive or disruptive.</p>
+        </div>
+        <div data-reveal><figure class="media r-16x9 media--contain"><img src="assets/images/smart/bms-network.jpg" alt="Hybrid BMS network diagram" loading="lazy" onError="{{ imgFail }}"></figure></div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Key benefits</p>
+          <h2 class="h2">Why a hybrid BMS.</h2>
+        </div>
+        <div class="features features--3"><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/lower-cost.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Lower installation &amp; retrofit costs</h3><p>No extensive new cabling, trenching or disruption in existing or occupied buildings.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/wider-coverage.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Wider &amp; faster coverage</h3><p>LoRaWAN penetrates walls and floors and reaches remote plant rooms, rooftops and multi-storey or campus areas.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/scalability.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Scalability &amp; flexibility</h3><p>Add hundreds of new sensors quickly and cheaply without rewiring.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/redundancy.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Reliability with redundancy</h3><p>Wired ensures stable control for mission-critical loops; wireless provides monitoring backup and failover.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/battery.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Battery-powered efficiency</h3><p>LoRaWAN devices last 4&ndash;10+ years on batteries, for minimal maintenance.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/richer-data.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Richer data &amp; better optimisation</h3><p>Granular sensing enables energy savings, fault detection and occupant comfort &mdash; often 20&ndash;40% energy reduction potential.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/upgrade-path.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Seamless upgrade path</h3><p>Keep existing Modbus/BACnet investments while adding modern IoT capabilities.</p></div></div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split split--wide">
+        <div data-reveal>
+          <p class="eyebrow">WSmart platform</p>
+          <h2 class="h2">Centralised monitoring &amp; control.</h2>
+          <p class="body mt-m">WSmart centralises your entire IoT ecosystem with the tools to monitor, manage and act with confidence &mdash; fully responsive on desktop, tablet and mobile.</p>
+          <div class="mt-m"><div class="features"><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/dashboard.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Intuitive dashboard</h3><p>A real-time overview of your device fleet&rsquo;s health and status, fully customisable.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/alerts.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Advanced alert handling</h3><p>Instant notifications by SMS, WhatsApp and email to resolve issues proactively.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/user-management.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Robust user management</h3><p>Granular permissions and roles for secure access and team collaboration.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/scheduling.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Scheduling</h3><p>Automate HVAC, lighting and security based on pre-set parameters and special events.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/reports.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Reports</h3><p>Statistics and reports for trend analysis and forecasting.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/anywhere.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Accessible anywhere</h3><p>Mobile-first design puts the full power of WSmart in your pocket, 24/7.</p></div></div></div></div>
+        </div>
+        <div class="grid-2" data-reveal>
+          <figure class="media r-3x4 media--contain"><img src="assets/images/smart/wsmart-dashboard.jpg" alt="WSmart customisable dashboard" loading="lazy" onError="{{ imgFail }}"></figure>
+          <div><figure class="media r-4x3 media--contain"><img src="assets/images/smart/ahu-control.jpg" alt="WSmart AHU/ACCU control with floor plan" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 media--contain mt-s"><img src="assets/images/smart/schematic.jpg" alt="WSmart schematic diagram" loading="lazy" onError="{{ imgFail }}"></figure></div>
+        </div>
+      </div>
+      <div class="wrap mt-l">
+        <p class="h4" data-reveal>Platform screens</p>
+        <div class="screens mt-s">
+          <figure data-reveal><figure class="media r-4x3 media--contain media--white"><img src="assets/images/smart/wsmart-dashboard-light.jpg" alt="WSmart dashboard, light theme" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Customisable dashboard</figcaption></figure>
+          <figure data-reveal><figure class="media r-4x3 media--contain media--white"><img src="assets/images/smart/alert-channels.jpg" alt="Alarm log and SMS, WhatsApp and email alerts" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Alert handling, alarm log, SMS, WhatsApp &amp; email</figcaption></figure>
+          <figure data-reveal><figure class="media r-4x3 media--contain media--white"><img src="assets/images/smart/special-event.jpg" alt="Special event management" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Special event management</figcaption></figure>
+          <figure data-reveal><figure class="media r-4x3 media--contain media--white"><img src="assets/images/smart/scheduling.jpg" alt="BMS scheduling calendar" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Scheduling (BMS)</figcaption></figure>
+          <figure data-reveal><figure class="media r-4x3 media--contain media--white"><img src="assets/images/smart/statistics.jpg" alt="Statistics and reports" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Statistics &amp; reports</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">BMS modules</p>
+          <h2 class="h2">One platform, every building system.</h2>
+        </div>
+        <article class="module">
+          <div class="module-media" data-reveal><figure class="media r-1x1 media--contain"><img src="assets/images/smart/hvac-cutaway.jpg" alt="HVAC VRF integration cutaway diagram" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div class="module-text" data-reveal>
+            <p class="eyebrow">HVAC management</p>
+            <h3 class="h2">VRF control with CoolMasterPro</h3>
+            <p class="body mt-s">CoolMasterPro is a universal gateway that integrates VRF HVAC systems (Daikin, Mitsubishi, LG and more) with the BMS over BACnet &mdash; auto-discovering indoor units and exposing full control plus diagnostics for plug-and-play centralised monitoring, alarming and energy optimisation.</p>
+            <ul class="bullets"><li>On/off, mode, setpoint and fan-speed control</li><li>BACnet / Modbus communication</li><li>Scheduling for individual units</li><li>Up to 255 connected units</li></ul>
+            <p class="h4 mt-m">Devices</p><div class="devices"><figure class="device"><span><img src="assets/images/smart/coolmaster.jpg" alt="CoolMasterPro gateway" loading="lazy" onError="{{ imgFail }}"></span><figcaption>CoolMasterPro gateway</figcaption></figure><figure class="device"><span><img src="assets/images/smart/hvac-ceiling.jpg" alt="VRF ceiling installation" loading="lazy" onError="{{ imgFail }}"></span><figcaption>VRF ceiling installation</figcaption></figure></div>
+            
+          </div>
+        </article>
+        <article class="module module--flip">
+          <div class="module-media" data-reveal><figure class="media r-4x3 "><img src="assets/images/smart/office-lighting.jpg" alt="Bright, well-ventilated open office" loading="lazy" onError="{{ imgFail }}"></figure><div class="mt-s"><figure class="media media--natural "><img src="assets/images/smart/iaq-gases.jpg" alt="Measured parameters: temperature, humidity, H2S, HCHO, PM2.5, CO2, NH3, CO, TVOC" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+          <div class="module-text" data-reveal>
+            <p class="eyebrow">Indoor air quality &amp; hygiene</p>
+            <h3 class="h2">LoRaWAN sensors for healthier spaces</h3>
+            <p class="body mt-s">Air quality sensors, odour detectors and vape detectors integrate with the BMS for real-time monitoring and automated responses &mdash; ventilation boost, alerts and cleaning dispatch.</p>
+            <ul class="bullets"><li>IAQ sensor: temperature, humidity, PM2.5, CO&#8322;, TVOC plus two selectable gases (CO, NO&#8322;, NH&#8323;, H&#8322;S, HCHO, O&#8323; and more); up to 5-year battery</li><li>Odour detector: NH&#8323; &amp; H&#8322;S with buzzer and traffic-light indicator; up to 3-year battery</li><li>Vape detector: multi-sensor, real-time alerts, flame alarm, anti-tamper</li><li>Ambient temperature/humidity sensor: &minus;20 to 60&deg;C, threshold alerts</li></ul>
+            <p class="h4 mt-m">Devices</p><div class="devices"><figure class="device"><span><img src="assets/images/smart/iaq-sensor.jpg" alt="Indoor air quality sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Indoor air quality sensor</figcaption></figure><figure class="device"><span><img src="assets/images/smart/vape-detector.jpg" alt="Vape detector" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Vape detector</figcaption></figure><figure class="device"><span><img src="assets/images/smart/odor-detector.jpg" alt="Odour detector" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Odour detector</figcaption></figure><figure class="device"><span><img src="assets/images/smart/ambient-sensor.jpg" alt="Temperature/humidity sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Temperature/humidity sensor</figcaption></figure></div>
+            <p class="h4 mt-m">Key benefits</p><ul class="icon-list"><li><span class="feature-icon"><img src="assets/images/icons/occupant-health.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Improved occupant health &amp; comfort</span></li><li><span class="feature-icon"><img src="assets/images/icons/policy-safety.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Policy enforcement &amp; safety</span></li><li><span class="feature-icon"><img src="assets/images/icons/hygiene.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Better hygiene &amp; user experience</span></li><li><span class="feature-icon"><img src="assets/images/icons/energy-optimisation.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Energy optimisation</span></li></ul>
+          </div>
+        </article>
+        <article class="module">
+          <div class="module-media" data-reveal><figure class="media r-16x9 media--contain"><img src="assets/images/smart/lighting-control-diagram.jpg" alt="Lighting control system diagram" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div class="module-text" data-reveal>
+            <p class="eyebrow">Lighting control</p>
+            <h3 class="h2">Occupancy-based lighting automation</h3>
+            <p class="body mt-s">A smart light controller, smart wall switch and PIR &amp; light sensor connect via LoRaWAN for remote monitoring, scheduling and optimisation &mdash; up to 30&ndash;50% lighting energy reduction.</p>
+            <ul class="bullets"><li>Smart light controller: up to 8 circuits with power metering</li><li>Remote and time-based on/off, power-off memory</li><li>Smart scene panel for one-to-many control</li><li>PIR presence detection with brightness measurement</li></ul>
+            <p class="h4 mt-m">Devices</p><div class="devices"><figure class="device"><span><img src="assets/images/smart/light-controller.jpg" alt="Smart light controller" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Smart light controller</figcaption></figure><figure class="device"><span><img src="assets/images/smart/wall-switch.jpg" alt="Smart wall switch" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Smart wall switch</figcaption></figure><figure class="device"><span><img src="assets/images/smart/scene-panel.jpg" alt="Smart scene panel" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Smart scene panel</figcaption></figure><figure class="device"><span><img src="assets/images/smart/pir-sensor.jpg" alt="PIR &amp; light sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>PIR &amp; light sensor</figcaption></figure></div>
+            <p class="h4 mt-m">Key benefits</p><ul class="icon-list"><li><span class="feature-icon"><img src="assets/images/icons/energy-savings.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Energy savings: up to 30&ndash;50%</span></li><li><span class="feature-icon"><img src="assets/images/icons/convenience.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Convenience &amp; user comfort</span></li><li><span class="feature-icon"><img src="assets/images/icons/easy-retrofit.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Easy retrofit, no rewiring</span></li><li><span class="feature-icon"><img src="assets/images/icons/centralised-bms.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Centralised BMS management</span></li><li><span class="feature-icon"><img src="assets/images/icons/low-maintenance.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Reliability &amp; low maintenance</span></li><li><span class="feature-icon"><img src="assets/images/icons/lighting-scalability.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Scalability across floors</span></li></ul>
+          </div>
+        </article>
+        <article class="module module--flip">
+          <div class="module-media" data-reveal><figure class="media r-3x4 "><img src="assets/images/smart/energy-meter.jpg" alt="Electrical distribution board" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div class="module-text" data-reveal>
+            <p class="eyebrow">Energy management</p>
+            <h3 class="h2">Granular electricity &amp; water sub-metering</h3>
+            <p class="body mt-s">LoRaWAN power and water meters provide accurate consumption data per floor or zone for visualisation, trend analysis, anomaly detection and ESG/compliance reporting.</p>
+            <ul class="bullets"><li>Power meter: 100A&ndash;600A CT, up to 4&times;3-phase or 12 single-phase circuits</li><li>Clamp-on current meter with long battery life</li><li>RS485/Modbus bridge to LoRaWAN for existing devices</li><li>Water meter MIU: leakage, backflow and tamper detection, &gt;15-year battery, IP68</li></ul>
+            <p class="h4 mt-m">Devices</p><div class="devices"><figure class="device"><span><img src="assets/images/smart/power-meter.jpg" alt="Power meter" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Power meter</figcaption></figure><figure class="device"><span><img src="assets/images/smart/current-meter.jpg" alt="Current meter" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Current meter</figcaption></figure><figure class="device"><span><img src="assets/images/smart/rs485-bridge.jpg" alt="RS485/Modbus bridge" loading="lazy" onError="{{ imgFail }}"></span><figcaption>RS485/Modbus bridge</figcaption></figure><figure class="device"><span><img src="assets/images/smart/water-meter.jpg" alt="Water meter MIU" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Water meter MIU</figcaption></figure></div>
+            <p class="h4 mt-m">Key benefits</p><ul class="icon-list"><li><span class="feature-icon"><img src="assets/images/icons/granular-visibility.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Granular visibility per floor / zone</span></li><li><span class="feature-icon"><img src="assets/images/icons/wireless-install.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Fully wireless, low-cost retrofit</span></li><li><span class="feature-icon"><img src="assets/images/icons/leak-detection.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Find inefficiencies &amp; leaks</span></li><li><span class="feature-icon"><img src="assets/images/icons/long-battery.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>5&ndash;10+ year battery life</span></li><li><span class="feature-icon"><img src="assets/images/icons/cost-savings.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Targeted cost savings</span></li><li><span class="feature-icon"><img src="assets/images/icons/esg-reporting.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Dashboards, alarms &amp; ESG reporting</span></li><li><span class="feature-icon"><img src="assets/images/icons/demand-control.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Demand-based control &amp; predictive alerts</span></li></ul>
+          </div>
+        </article>
+        <article class="module">
+          <div class="module-media" data-reveal><figure class="media r-3x4 "><img src="assets/images/smart/occupancy.jpg" alt="Busy office lounge" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div class="module-text" data-reveal>
+            <p class="eyebrow">People counting &amp; occupancy</p>
+            <h3 class="h2">Privacy-friendly occupancy intelligence</h3>
+            <p class="body mt-s">AI ToF people-counting sensors for offices and exhibition centres deliver real-time headcount and zone occupancy &mdash; enabling demand-controlled ventilation and lighting with typically 20&ndash;40% savings.</p>
+            <ul class="bullets"><li>AI stereo vision people counter: anonymous, GDPR-compliant, bi-directional counting and dwell time</li><li>AI workplace occupancy sensor: up to 95% accuracy, up to 16 detection regions</li><li>Sound level sensor: 30&ndash;120 dBA, &plusmn;3 dB accuracy</li><li>Supports space planning, hot-desking and desk booking</li></ul>
+            <p class="h4 mt-m">Devices</p><div class="devices"><figure class="device"><span><img src="assets/images/smart/people-counter.jpg" alt="AI stereo vision people counter" loading="lazy" onError="{{ imgFail }}"></span><figcaption>AI stereo vision people counter</figcaption></figure><figure class="device"><span><img src="assets/images/smart/workplace-sensor.jpg" alt="AI workplace occupancy sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>AI workplace occupancy sensor</figcaption></figure><figure class="device"><span><img src="assets/images/smart/sound-sensor.jpg" alt="Sound level sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Sound level sensor</figcaption></figure></div>
+            <p class="h4 mt-m">Key benefits</p><ul class="icon-list"><li><span class="feature-icon"><img src="assets/images/icons/space-utilisation.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Optimised space utilisation</span></li><li><span class="feature-icon"><img src="assets/images/icons/visitor-experience.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Enhanced visitor experience</span></li><li><span class="feature-icon"><img src="assets/images/icons/hvac-savings.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Energy &amp; HVAC savings of 20&ndash;40%</span></li><li><span class="feature-icon"><img src="assets/images/icons/decisions.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Better staffing &amp; space decisions</span></li></ul>
+          </div>
+        </article>
+        <article class="module module--flip">
+          <div class="module-media" data-reveal><figure class="media r-1x1 media--contain"><img src="assets/images/smart/toilet-monitoring.jpg" alt="Smart restroom sensor layout" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div class="module-text" data-reveal>
+            <p class="eyebrow">Smart restroom</p>
+            <h3 class="h2">Toilet occupancy monitoring</h3>
+            <p class="body mt-s">Integrated sensors improve hygiene, efficiency and user experience in office and commercial buildings.</p>
+            <ul class="bullets"><li>Toilet occupancy sensor: PIR + ToF, accuracy above 99.5%, GDPR-compliant</li><li>Smart fill-level sensor for toilet paper, soap and towels</li><li>Odour sensor triggers ventilation or cleaning alerts</li><li>External occupancy display panel</li></ul>
+            <p class="h4 mt-m">Devices</p><div class="devices"><figure class="device"><span><img src="assets/images/smart/toilet-sensor.jpg" alt="Toilet occupancy sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Toilet occupancy sensor</figcaption></figure><figure class="device"><span><img src="assets/images/smart/fill-sensor.jpg" alt="Smart fill-level sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Smart fill-level sensor</figcaption></figure><figure class="device"><span><img src="assets/images/smart/odor-sensor.jpg" alt="Odour sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Odour sensor</figcaption></figure></div>
+            
+          </div>
+        </article>
+        <article class="module">
+          <div class="module-media" data-reveal><figure class="media r-1x1 media--contain"><img src="assets/images/smart/irrigation-diagram.jpg" alt="Smart irrigation system diagram" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div class="module-text" data-reveal>
+            <p class="eyebrow">Urban garden management</p>
+            <h3 class="h2">LoRaWAN smart irrigation</h3>
+            <p class="body mt-s">Precise, automated and efficient water management for landscaping and green spaces &mdash; irrigating only when soil moisture is low for up to 30&ndash;50% water savings.</p>
+            <ul class="bullets"><li>Solenoid valve controller: autonomous operation, multicast control, IP68</li><li>Soil moisture, temperature &amp; EC sensor: IP68, up to 10-year battery</li><li>Flow meter for volume-based control and leak detection</li><li>Remote management from the cloud dashboard</li></ul>
+            <p class="h4 mt-m">Devices</p><div class="devices"><figure class="device"><span><img src="assets/images/smart/solenoid-controller.jpg" alt="Solenoid valve controller" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Solenoid valve controller</figcaption></figure><figure class="device"><span><img src="assets/images/smart/soil-sensor.jpg" alt="Soil moisture, temperature &amp; EC sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Soil moisture, temperature &amp; EC sensor</figcaption></figure><figure class="device"><span><img src="assets/images/smart/urban-garden.jpg" alt="Urban garden" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Urban garden</figcaption></figure></div>
+            <p class="h4 mt-m">Key benefits</p><ul class="icon-list"><li><span class="feature-icon"><img src="assets/images/icons/water-savings.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Water savings of 30&ndash;50%</span></li><li><span class="feature-icon"><img src="assets/images/icons/precision.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Precision &amp; automation</span></li><li><span class="feature-icon"><img src="assets/images/icons/cost-efficiency.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Cost efficiency</span></li><li><span class="feature-icon"><img src="assets/images/icons/remote-management.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Remote management</span></li><li><span class="feature-icon"><img src="assets/images/icons/plant-health.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><span>Improved plant health</span></li></ul>
+          </div>
+        </article>
+        <article class="module module--flip">
+          <div class="module-media" data-reveal><figure class="media r-3x4 "><img src="assets/images/smart/server-room.jpg" alt="Server room with red alarm light" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div class="module-text" data-reveal>
+            <p class="eyebrow">Critical case management</p>
+            <h3 class="h2">Early detection, rapid response</h3>
+            <p class="body mt-s">Dedicated LoRaWAN sensors detect high-risk events and trigger automated actions &mdash; shut-off valves, HVAC shutdown and notifications &mdash; with every event logged for post-incident analysis.</p>
+            <ul class="bullets"><li>Water leakage sensor: automatic solenoid valve closure, up to 5-year battery</li><li>Extreme temperature sensor: PT100 probe &minus;200 to 600&deg;C for server rooms and cold storage</li><li>Smoke detection sensor: auxiliary alerts, HVAC shutdown and elevator recall integration</li><li>Alarms by SMS, WhatsApp and email with a full event log</li></ul>
+            <p class="h4 mt-m">Devices</p><div class="devices"><figure class="device"><span><img src="assets/images/smart/leak-sensor.jpg" alt="Water leakage sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Water leakage sensor</figcaption></figure><figure class="device"><span><img src="assets/images/smart/temp-sensor.jpg" alt="Extreme temperature sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Extreme temperature sensor</figcaption></figure><figure class="device"><span><img src="assets/images/smart/smoke-sensor.jpg" alt="Smoke detection sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Smoke detection sensor</figcaption></figure><figure class="device"><span><img src="assets/images/smart/alarm.jpg" alt="Alarm notification" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Alarm notification</figcaption></figure></div>
+            
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Energy-saving partners</p>
+          <h2 class="h2">Integrated with the WSmart platform.</h2>
+          <p class="lead">We partner with energy-saving service providers and deliver real-time cloud reporting, analysis and display &mdash; so their clients instantly understand energy-saving performance.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card" data-reveal><figure class="media r-16x9 "><img src="assets/images/smart/water-treatment.jpg" alt="Condensing and chilled water treatment system" loading="lazy" onError="{{ imgFail }}"></figure>
+            <div class="card-body"><h3 class="h3">Innovative Water Treatment</h3>
+              <p class="body">With Newton Technology Group &mdash; a patented eco-friendly treatment system for chilled and condensing water, with IoT data acquisition.</p>
+              <div class="product-more"><figure class="media r-4x3 "><img src="assets/images/smart/cooling-tower.jpg" alt="Cooling tower" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 media--contain media--white"><img src="assets/images/smart/ps-ws-system.jpg" alt="PS and WS system functions and installation" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 media--contain"><img src="assets/images/smart/water-dashboards.jpg" alt="Water treatment monitoring dashboards" loading="lazy" onError="{{ imgFail }}"></figure></div>
+              <ul class="bullets"><li>PS system: descaling, rust removal and protection layer, prolonging lifespan and improving flow rate</li><li>WS system: automatic back-wash and purification, killing bacteria, algae and legionella</li><li>Monitors water flow, chilled and condensed water temperatures and power consumption</li><li>Cloud-based, web view, mobile-friendly; Modbus, MQTT, LoRaWAN, Linux</li></ul>
+            </div>
+          </div>
+          <div class="card" data-reveal><figure class="media r-16x9 media--contain"><img src="assets/images/smart/dcd-load-profile.jpg" alt="Demand control drive load profile showing 30-45% savings" loading="lazy" onError="{{ imgFail }}"></figure>
+            <div class="card-body"><h3 class="h3">Demand Control Drives (DCD)</h3>
+              <p class="body">Computer- and sensor-driven drives for HVAC systems and pumps that calculate the most efficient sequencing in real time &mdash; 30&ndash;45% savings.</p>
+              <div class="product-more"><figure class="media r-4x3 "><img src="assets/images/smart/dcd-panels.jpg" alt="Demand control drive panels installed in a plant room" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/smart/rooftop-plant.jpg" alt="Rooftop HVAC plant with drives" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 media--contain"><img src="assets/images/smart/dcd-dashboard.jpg" alt="DCD energy-saving dashboard" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 media--contain media--white"><img src="assets/images/smart/dcd-architecture.jpg" alt="DCD system architecture with LoRa and WSmart" loading="lazy" onError="{{ imgFail }}"></figure></div>
+              <ul class="bullets"><li>Manages speed and flow, eliminating excess resources</li><li>Motors run cooler and quieter, saving on maintenance</li><li>Eliminates inrush currents up to 3&times; the running load</li><li>AHU on/off control, power, energy-saving, temperature and humidity monitoring</li></ul>
+            </div>
+          </div>
+        </div>
+        <p class="small mt-m" data-reveal>Partner systems are deployed at sites including Mydin, Loh Guan Lye Hospital, Persada Convention Centre, Universiti Tenaga Nasional (UNITEN), Aman Sentral, TDK and Tenaga Nasional Berhad (TNB).</p>
+      </div>
+    </section>
+
+    <section class="section" id="ai-vision">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">AI Vision</p>
+          <h2 class="h2">People counting in retail: data &amp; analytics.</h2>
+          <p class="lead">AI cameras turn foot traffic into decisions &mdash; from staffing and store layout to marketing and security.</p>
+        </div>
+        <div class="split">
+          <div data-reveal><figure class="media r-16x9 media--contain"><img src="assets/images/smart/retail-analytics-map.jpg" alt="Retail store AI camera analytics map" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/smart/people-counting.jpg" alt="AI camera tracking people at a store entrance" loading="lazy" onError="{{ imgFail }}"></figure></div>
+        </div>
+        <div class="mt-l"><div class="features features--3"><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/foot-traffic.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Accurate foot traffic analysis</h3><p>Real-time data on customers entering and exiting, with peak shopping times visualised.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/demographics.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Customer demographics</h3><p>Gender distribution and age-group segmentation on the dashboard.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/satisfaction.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Customer satisfaction tracking</h3><p>Facial expression analysis gauges satisfaction (happy, unhappy).</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/entering-rate.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Entering shop rate</h3><p>Measures the rate at which passers-by enter the store.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/heat-map.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Heat mapping</h3><p>Visualises customer traffic patterns in popular zones.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/blacklist.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Blacklist management</h3><p>Alerts when blacklisted individuals enter the premises.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/vip.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>VIP management</h3><p>Notifications when VIP customers are recognised.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/restricted-area.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Restricted area monitoring</h3><p>Immediate alerts if individuals stay in restricted areas too long.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/queuing.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Average queuing time</h3><p>Displays the average wait time at the cashier.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/language.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Language support</h3><p>Dashboard available in Chinese and English.</p></div></div></div></div>
+        <div class="split mt-l">
+          <div data-reveal>
+            <p class="h4">Data analysis</p>
+            <div class="mt-s"><div class="features"><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/behavior-insights.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Customer behaviour insights</h3><p>Movement patterns reveal how effective the store layout is.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/operational-efficiency.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Operational efficiency</h3><p>Foot traffic data optimises staffing levels.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/sales-conversion.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Sales conversion rates</h3><p>Correlates foot traffic with sales performance.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/real-time-analysis.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Real-time data analysis</h3><p>Compare periods, such as the same time last week, to spot trends.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/iot-integration.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Integration with other IoT devices</h3><p>Custom data experiences from combined sensor input.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/data-visualization.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Data visualisation tools</h3><p>Customisable reports from comprehensive data.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/actionable-insights.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Actionable insights</h3><p>Aggregated data for marketing strategy and sales.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/retail-scalability.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Scalability</h3><p>Assess proportional data as your retail estate grows.</p></div></div></div></div>
+          </div>
+          <div data-reveal>
+            <p class="h4">Security features</p>
+            <div class="mt-s"><div class="features features--1"><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/security-monitoring.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>Security monitoring</h3><p>AI cameras detect suspicious activity in real time and alert on theft, vandalism or unauthorised access in high-risk areas.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/after-hours.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>After-hours monitoring</h3><p>Cameras keep watching when the shop is closed and alert on any unauthorised access.</p></div></div></div></div>
+          </div>
+        </div>
+        <div class="grid-3 mt-l">
+          <div data-reveal><figure class="media r-16x9 media--contain"><img src="assets/images/smart/retail-dashboard.jpg" alt="Retail analytics dashboard" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Dashboard in English and Chinese, integrated with other IoT devices</figcaption></div>
+          <div data-reveal><figure class="media r-16x9 media--contain"><img src="assets/images/smart/camera-grid.jpg" alt="Multi-zone store camera view" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Security monitoring and after-hours alerts</figcaption></div>
+          <div data-reveal><figure class="media r-16x9 media--contain"><img src="assets/images/smart/analytics-flow.jpg" alt="AI people counting data flow" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Optimise staffing, target marketing, enhance experience</figcaption></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Use case: museums</p>
+          <h2 class="h2">Asset management with indoor positioning &amp; AI cameras.</h2>
+        </div>
+        <div class="split">
+          <div data-reveal><figure class="media r-4x3 media--contain"><img src="assets/images/smart/museum-solution.jpg" alt="Features of the museum solution" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/smart/museum.jpg" alt="Visitors in a museum gallery" loading="lazy" onError="{{ imgFail }}"></figure></div>
+        </div>
+        <div class="mt-l"><div class="features features--3"><div class="feature" data-reveal><h3>1. Too-close reminder</h3><p>The AI camera monitors proximity to exhibits and a LoRaWAN buzzer asks visitors to step back.</p></div><div class="feature" data-reveal><h3>2. Visitor counting</h3><p>Accurate counts of visitors entering and exiting for attendance statistics.</p></div><div class="feature" data-reveal><h3>3. Demographic analysis</h3><p>Age and gender insights into the audience profile.</p></div><div class="feature" data-reveal><h3>4. Suspicious object detection</h3><p>Monitors designated areas and alerts staff to suspicious objects.</p></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/artwork-removal.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>5. Artwork &amp; object removal monitoring</h3><p>Immediate alerts to security on unauthorised removal of artworks or objects.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/exhibit-interaction.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>6. Exhibit interaction analysis</h3><p>Time spent at each exhibit, to evaluate engagement and optimise displays.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/crowd-management.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>7. Crowd management</h3><p>Real-time crowd density for visitor flow and safety.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/facial-expression.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>8. Facial expression analysis</h3><p>Gauges visitor satisfaction while they interact with exhibits.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/instant-removal.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>9. Instant removal alert</h3><p>A Time-of-Flight sensor behind each exhibit triggers an alarm if it is removed.</p></div></div><div class="feature feature--icon" data-reveal><span class="feature-icon"><img src="assets/images/icons/asset-management.jpg" alt="" loading="lazy" onError="{{ imgFail }}"></span><div><h3>10. Asset management</h3><p>AoA beacons on each artwork for easy location management and tracking.</p></div></div></div></div>
+        <div class="mt-l">
+          <div data-reveal class="narrow">
+            <p class="h4">Indoor positioning with AoA</p>
+            <p class="body mt-s">The AoA locator collects BLE signals from beacons on each artwork, works out their direction with an antenna array and triangulation, and sends locations to the position engine. AoA gateways at every entrance and exit raise an alarm if an artwork is detected there.</p>
+            <div class="mt-s"><figure class="media media--natural media--white"><img src="assets/images/smart/aoa-positioning.jpg" alt="AoA indoor positioning of tagged assets" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          </div>
+        </div>
+        <div class="grid-2 mt-l">
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/smart/tof-wall.jpg" alt="ToF sensor beacons mounted on a gallery wall" loading="lazy" onError="{{ imgFail }}"></figure><div class="mt-s"><figure class="media r-16x9 media--contain media--white"><img src="assets/images/smart/tof-sensor.jpg" alt="ToF sensor beacon" loading="lazy" onError="{{ imgFail }}"></figure></div><figcaption>ToF sensor beacons (38 &times; 38 &times; 14.5mm) detect artwork presence in real time.</figcaption></div>
+          <div data-reveal>
+            <h3 class="h3">Hardware</h3>
+            <div class="devices"><figure class="device"><span><img src="assets/images/smart/tof-distance-sensor.jpg" alt="ToF distance sensor" loading="lazy" onError="{{ imgFail }}"></span><figcaption>ToF distance sensor</figcaption></figure><figure class="device"><span><img src="assets/images/smart/asset-tag.jpg" alt="Asset tag" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Asset tag</figcaption></figure><figure class="device"><span><img src="assets/images/smart/aoa-locator.jpg" alt="Indoor AoA locator" loading="lazy" onError="{{ imgFail }}"></span><figcaption>Indoor AoA locator</figcaption></figure><figure class="device"><span><img src="assets/images/smart/ir-bullet-camera.jpg" alt="4MP IR bullet camera" loading="lazy" onError="{{ imgFail }}"></span><figcaption>4MP IR bullet camera</figcaption></figure></div>
+            <div class="mt-s"><ul class="bullets"><li>ToF distance sensor: up to 3m range, millimetre-level accuracy, 3-year battery, IP67</li><li>Asset tag: replaceable battery, iBeacon / Eddystone / AltBeacon, up to 400m range</li><li>Indoor AoA locator: 1m accuracy, PoE/DC power, Ethernet, IP66</li><li>4MP IR bullet WizMind network camera</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div data-reveal>
+          <h2 class="h2">Need a customised solution for your industry?</h2>
+          <p>As experienced designers and software developers, we tailor our materials, lighting and platform to your specific requirements. Contact us to discuss your needs.</p>
+        </div>
+        <a class="btn btn--light" data-reveal href="contact">Contact Us <span>&rarr;</span></a>
+      </div>
+    </section>
+  </main>
+
+  <sc-if value="{{ showTop }}">
+    <a class="to-top" href="#top" onClick="{{ toTop }}" aria-label="Back to top"><span aria-hidden="true">&uarr;</span></a>
+  </sc-if>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./"><b>S &amp; B</b><span>Design Limited</span></a>
+          <p class="mt-m">Innovation Materials, Timeless Spaces.<br>Architecture, interior design, materials and smart building solutions.</p>
+        </div>
+        <div>
+          <h4>Hong Kong</h4>
+          <p>10/F Room 1001, Bonham Center,<br>79&ndash;85 Bonham Strand,<br>Sheung Wan, Hong Kong</p>
+          <p class="mt-s"><a href="mailto:samuelng@sandb.hk">samuelng@sandb.hk</a></p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul><li><a href="./">Home</a></li><li><a href="about">About</a></li><li><a href="materials">Materials</a></li><li><a href="lighting">Lighting</a></li><li><a href="smart-building">Smart Building</a></li><li><a href="contact">Contact</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; S &amp; B Design Limited. All rights reserved.</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440}}">
+const Component = window.GlyphLogic(DCLogic);
+</script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="./assets/js/script.js"></script>
+</head>
+<body>
+<div class="preloader" id="preloader" role="status" aria-label="Loading">
+  <div class="preloader-inner">
+    <span class="brand"><b>S &amp; B</b><span>Design Limited</span></span>
+    <span class="preloader-bar" aria-hidden="true"><i></i></span>
+  </div>
+</div>
+<x-dc>
+<helmet>
+<title>Premium LED Lighting | S &amp; B Design Limited</title>
+<meta name="description" content="High-performance, eye-comfort LED panels, downlights, spotlights, track and specialist lighting with CRI above 98 and a 3-year warranty.">
+</helmet>
+<div class="page">
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><b>S &amp; B</b><span>Design Limited</span></a>
+      <nav class="nav only-desk" aria-label="Primary">
+        <a href="./">Home</a><a href="about">About</a><a href="materials">Materials</a><a href="lighting" aria-current="page">Lighting</a><a href="smart-building">Smart Building</a>
+      </nav>
+      <div>
+        <a class="btn header-cta only-desk" href="contact">Contact</a>
+        <button class="menu-btn only-mob" type="button" onClick="{{ openMenu }}" aria-label="Open menu" aria-controls="site-menu">Menu <i></i></button>
+      </div>
+    </div>
+  </header>
+
+  <sc-if value="{{ menuOpen }}">
+    <div class="menu" id="site-menu">
+      <div class="menu-top">
+        <span class="brand"><b>S &amp; B</b><span>Design Limited</span></span>
+        <button class="menu-close" type="button" onClick="{{ closeMenu }}" aria-label="Close menu">&times;</button>
+      </div>
+      <a href="./" onClick="{{ closeMenu }}">Home</a><a href="about" onClick="{{ closeMenu }}">About</a><a href="materials" onClick="{{ closeMenu }}">Materials</a><a href="lighting" onClick="{{ closeMenu }}">Lighting</a><a href="smart-building" onClick="{{ closeMenu }}">Smart Building</a>
+      <a class="btn" href="contact" onClick="{{ closeMenu }}">Contact Us <span>&rarr;</span></a>
+    </div>
+  </sc-if>
+
+  <main id="top">
+
+    <section class="hero hero--page">
+      <div class="wrap">
+        <div class="hero-text">
+          <p class="eyebrow">With our lighting partner Join Planning Co. Ltd</p>
+          <h1 class="display">Premium LED<br>Lighting Solutions</h1>
+          <p class="lead">High performance &middot; Eye comfort &middot; Innovative design. Energy-efficient, eye-friendly lighting for offices, education, healthcare, retail and commercial projects, serving customers in Hong Kong, Mainland China, Thailand and London.</p>
+          <div class="actions"><a class="btn" href="contact">Request a Lighting Proposal <span>&rarr;</span></a><a class="link" href="#range">Product Range <span>&rarr;</span></a></div>
+        </div>
+        <div class="hero-media"><img src="assets/images/smart/office-lighting.jpg" alt="Open-plan office lit by linear LED fixtures" loading="eager" onError="{{ imgFail }}"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="stats" data-reveal>
+          <div class="stat"><b>CRI &gt;98</b><span>High colour rendering index for true-to-life colour</span></div>
+          <div class="stat"><b>Low UGR</b><span>Low unified glare rating for visual comfort</span></div>
+          <div class="stat"><b>200 lm/W</b><span>Efficacy of our premium panel &mdash; EU energy label A+++</span></div>
+          <div class="stat"><b>3 years</b><span>Warranty, with full customisation and smart control options</span></div>
+        </div>
+        <div class="mt-m" data-reveal><ul class="chips"><li>CE</li><li>RoHS</li><li>UL</li><li>ISO</li><li>3C</li></ul></div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="wrap split">
+        <div data-reveal>
+          <p class="eyebrow">Company profile</p>
+          <h2 class="h2">Long lifespan, innovative designs and excellent after-sales service.</h2>
+          <p class="body mt-m">Our lighting partner is committed to energy-efficient, high-performance and eye-friendly lighting, with strict adherence to international standards such as CE, RoHS, UL, ISO and 3C.</p>
+          <p class="body">Every product is verified with in-house testing equipment: luminaire spectrum test systems, high-voltage testers, electronic component LCR testers, digital oscilloscopes and high/low temperature environmental test chambers.</p>
+        </div>
+        <div data-reveal>
+          <div class="gallery gallery--3"><figure class="media r-4x3 "><img src="assets/images/lighting/office-1.jpg" alt="Office lit with linear LEDs" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/office-2.jpg" alt="Workspace with LED lighting" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/lounge.jpg" alt="Lounge with track lights" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/office-3.jpg" alt="Office lounge with linear LEDs" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/cover-interiors.jpg" alt="Interior and villa lit with LED lighting" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/villa.jpg" alt="Villa exterior lighting at dusk" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          <p class="h4 mt-m">Product testing equipment &amp; instruments</p>
+          <div class="mt-s"><figure class="media media--natural "><img src="assets/images/lighting/testing-equipment.jpg" alt="Spectrum test systems, high-voltage tester, LCR tester, oscilloscope and environmental test chamber" loading="lazy" onError="{{ imgFail }}"></figure></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="range">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Product range</p>
+          <h2 class="h2">From everyday panels to tournament-grade specialist lighting.</h2>
+        </div>
+
+        <div class="product-group">
+          <h3 class="h3">LED Panel Lights</h3>
+          <div class="grid-3">
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/panel-200lmw.jpg" alt="Premium High-Efficiency LED Panel" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/panel-before-after.jpg" alt="Standard vs premium LED panel" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">Energy-saving</span><h4>Premium High-Efficiency LED Panel</h4><ul class="bullets"><li>Up to 200 lm/W, EU energy label A+++</li><li>24W panel replaces a traditional 60W fixture</li><li>4000K natural white &middot; 600&times;600mm</li><li>18W / 24W / 30W</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/panel-200lmw-scenes.jpg" alt="Premium High-Efficiency LED Panel application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/sensor-radar.jpg" alt="Microwave radar sensor LED panel" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/sensor-pir.jpg" alt="PIR motion sensor LED panel" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">Automatic illumination</span><h4>Smart Sensor LED Panel</h4><ul class="bullets"><li>5.8GHz microwave radar sensor &mdash; detects through walls/doors</li><li>PIR infrared motion sensor for bathrooms, stairwells &amp; hallways</li><li>Ideal for offices, corridors, lobbies, hospitals &amp; public buildings</li><li>600&times;600mm &middot; 18W / 24W / 30W</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><div class="scene-grid"><figure class="media r-4x3 "><img src="assets/images/lighting/sensor-conference.jpg" alt="Smart Sensor LED Panel application scene" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/sensor-corridor.jpg" alt="Smart Sensor LED Panel application scene" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/sensor-lobby.jpg" alt="Smart Sensor LED Panel application scene" loading="lazy" onError="{{ imgFail }}"></figure></div></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/spectrum-panel.jpg" alt="Full Spectrum LED Panel" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-body"><span class="tag">Natural light</span><h4>Full Spectrum LED Panel</h4><ul class="bullets"><li>Full spectrum, CRI Ra&gt;97</li><li>Eye-caring acrylic diffuser</li><li>Integrated driver, premium build</li><li>600&times;600mm &middot; 68W &mdash; for malls, showrooms, galleries</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><div class="scene-grid"><figure class="media r-4x3 "><img src="assets/images/lighting/spectrum-mall.jpg" alt="Full Spectrum LED Panel application scene" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/spectrum-showroom.jpg" alt="Full Spectrum LED Panel application scene" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/spectrum-gallery.jpg" alt="Full Spectrum LED Panel application scene" loading="lazy" onError="{{ imgFail }}"></figure></div></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/tunable.jpg" alt="Infinite Dimmable &amp; Tunable Panel" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-body"><span class="tag">Smart control</span><h4>Infinite Dimmable &amp; Tunable Panel</h4><ul class="bullets"><li>Infinite dimming 0&ndash;100%</li><li>3000K / 4000K / 6500K colour temperatures</li><li>Direct light, no yellowing</li><li>Smartphone app control</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/tunable-scenes.jpg" alt="Infinite Dimmable &amp; Tunable Panel application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/frameless-panel.jpg" alt="Frameless &amp; Mirror Edge Panels" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/mirror-edge.jpg" alt="Mirror Edge frameless panels 300&times;300mm and 300&times;600mm" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">Seamless design</span><h4>Frameless &amp; Mirror Edge Panels</h4><ul class="bullets"><li>Full-surface, shadow-free light emission</li><li>Sizes from 300&times;300mm (30W) to 600&times;1200mm (120W)</li><li>Mirror Edge series: true frameless, private moulding customisation</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/frameless-scenes.jpg" alt="Frameless &amp; Mirror Edge Panels application scenes" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media media--natural "><img src="assets/images/lighting/mirror-edge-scenes.jpg" alt="Frameless &amp; Mirror Edge Panels application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/integrated-panel.jpg" alt="Integrated, Surface &amp; Spring-Clip Panels" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/surface-panels.jpg" alt="Surface-mounted LED panels" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/spring-brazilian.jpg" alt="Spring-clip panel with Brazilian frame" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/spring-engineering.jpg" alt="Spring-clip panel with engineering frame" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">Easy installation</span><h4>Integrated, Surface &amp; Spring-Clip Panels</h4><ul class="bullets"><li>Integrated driver with high-voltage surge protection</li><li>Surface-mounted: 300&times;300mm 20W to 600&times;1200mm 120W</li><li>Tool-free spring clip with Brazilian or engineering frame</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><div class="scene-grid"><figure class="media r-4x3 "><img src="assets/images/lighting/integrated-scenes.jpg" alt="Integrated, Surface &amp; Spring-Clip Panels application scene" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/surface-scenes.jpg" alt="Integrated, Surface &amp; Spring-Clip Panels application scene" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/spring-scenes.jpg" alt="Integrated, Surface &amp; Spring-Clip Panels application scene" loading="lazy" onError="{{ imgFail }}"></figure></div></div></div>
+            <div class="product" data-reveal><figure class="media r-1x1 "><img src="assets/images/lighting/waterproof-panel.jpg" alt="IP54 waterproof LED panel" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/explosion-proof-panel.jpg" alt="Explosion-proof LED panel" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">Demanding environments</span><h4>Waterproof &amp; Explosion-Proof</h4><ul class="bullets"><li>IP54 waterproof &amp; dustproof for humid and wet areas</li><li>Explosion-proof design for hazardous locations</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/waterproof-scenes.jpg" alt="Waterproof &amp; Explosion-Proof application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/cleanroom-panels.jpg" alt="K2 clean room panel sizes" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-body"><span class="tag">Purification lighting</span><h4>K2 Clean Room Panels</h4><ul class="bullets"><li>Anti-yellowing, ultra-thin, dust &amp; insect proof</li><li>High colour rendering &amp; clarity</li><li>300&times;300mm 12W to 600&times;1200mm 72W</li><li>For laboratories, clean rooms, hospitals, pharma &amp; electronics</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/cleanroom-strip.jpg" alt="K2 Clean Room Panels application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/custom-panel.jpg" alt="Custom non-standard LED panel" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/linear-custom.jpg" alt="Custom linear LED panels, side-light and direct-light" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">Tailor-made</span><h4>Custom Non-Standard &amp; Linear Panels</h4><ul class="bullets"><li>Seamless splicing, unlimited length &amp; width</li><li>Single panel up to 2.4m &times; 1.2m; linear from 200&times;600mm to 200&times;2400mm+</li><li>Light sources: Philips, OSRAM, Bridgelux, Hongli; drivers: Philips, OSRAM, Lifud, Eaglerise</li><li>CE, RoHS, ISO, CB, ETL, FCC, UL, SAA</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/custom-scenes.jpg" alt="Custom Non-Standard &amp; Linear Panels application scenes" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media media--natural "><img src="assets/images/lighting/linear-scenes.jpg" alt="Custom Non-Standard &amp; Linear Panels application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+          </div>
+        </div>
+
+        <div class="product-group">
+          <h3 class="h3">Downlights, Spotlights &amp; Track</h3>
+          <div class="grid-3">
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/cob-spotlights.jpg" alt="Anti-Glare COB Spotlights" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-body"><span class="tag">Spring-clip, deep recessed</span><h4>Anti-Glare COB Spotlights</h4><ul class="bullets"><li>Shiny Gold 7W &middot; &Oslash;64&times;H67mm &middot; cut-out &Oslash;55</li><li>Gun Black 12W &middot; &Oslash;84&times;H83mm &middot; cut-out &Oslash;75</li><li>Shiny Silver 20W &middot; &Oslash;110&times;H100mm &middot; cut-out &Oslash;95</li><li>Low UGR, precise beam control</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/cob-scenes.jpg" alt="Anti-Glare COB Spotlights application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/wallwash-2gen.jpg" alt="2nd generation wall wash spotlight" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/starflash.jpg" alt="Star Flash deep anti-glare wall wash spotlight" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">2nd Generation &amp; Star Flash</span><h4>Wall Wash Spotlights</h4><ul class="bullets"><li>85mm &middot; 12W &middot; cut-out &Oslash;75 &middot; 15&deg;/24&deg;/36&deg; beams</li><li>Fish-scale heat sink, uniform vertical washing</li><li>Star Flash: deeper anti-glare recess, reinforced spring clips</li><li>Gun black, shiny black, silver, white, rose gold</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/wallwash-scenes.jpg" alt="Wall Wash Spotlights application scenes" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media media--natural "><img src="assets/images/lighting/starflash-scenes.jpg" alt="Wall Wash Spotlights application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/jiangong-downlights.jpg" alt="Jian Gong 3rd generation downlights" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-body"><span class="tag">Jian Gong 3rd Generation</span><h4>Deep Anti-Glare Downlights</h4><ul class="bullets"><li>Die-cast aluminium body</li><li>White + black or grey + black trims, very low UGR</li><li>88mm &middot; 7W &middot; cut-out 75mm</li><li>6000K / 4000K / 3000K</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/jiangong-scenes.jpg" alt="Deep Anti-Glare Downlights application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/downlight.jpg" alt="Star Moon ultra-thin downlight" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/ultrathin-2gen.jpg" alt="2nd generation ultra-thin downlight" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/starsky.jpg" alt="Star Sky ultra-thin downlight" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/starsky-indoor.jpg" alt="Star Sky indoor application" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/starsky-outdoor.jpg" alt="Star Sky outdoor application" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">2nd Gen, Star Moon, Star Sky</span><h4>Ultra-Thin Downlights</h4><ul class="bullets"><li>Only 3cm thick &mdash; ideal for low ceilings</li><li>3-colour temperature adjustable</li><li>Star Sky: 90mm, 6W, indoor &amp; outdoor</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/ultrathin-scenes.jpg" alt="Ultra-Thin Downlights application scenes" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media media--natural "><img src="assets/images/lighting/starmoon-scenes.jpg" alt="Ultra-Thin Downlights application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-1x1 "><img src="assets/images/lighting/track-light.jpg" alt="2nd Generation Track Lights" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/track-finishes.jpg" alt="Track lights in white and black finish" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">Directional lighting</span><h4>2nd Generation Track Lights</h4><ul class="bullets"><li>High-brightness COB, high CRI, low light decay</li><li>30W with 360&deg; horizontal + 90&deg; vertical rotation</li><li>White or black finish</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/track-scenes.jpg" alt="2nd Generation Track Lights application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/linear-office.jpg" alt="Star Shine Linear Office Lights" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-body"><span class="tag">Uniform illumination</span><h4>Star Shine Linear Office Lights</h4><ul class="bullets"><li>Flicker-free, instant start, no noise</li><li>IP20 &middot; 1200mm in widths 50&ndash;300mm</li><li>Pendant, surface-mounted or recessed</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/linear-office-scenes.jpg" alt="Star Shine Linear Office Lights application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/honeycomb-panel.jpg" alt="Square honeycomb side-emitting panel" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/honeycomb-indoor.jpg" alt="Honeycomb panel indoor applications" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/honeycomb-outdoor.jpg" alt="Honeycomb panel outdoor applications" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">Creative ceilings</span><h4>Square Honeycomb Side-Emitting Panel</h4><ul class="bullets"><li>Side-emitting honeycomb optics, glare-free</li><li>190&times;190mm (cut-out 170&times;170mm), 16W</li><li>Indoor and semi-outdoor applications</li></ul></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/triproof-lights.jpg" alt="Tri-proof ceiling lights in three sizes" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-body"><span class="tag">Fully sealed</span><h4>Tri-Proof Ceiling Lights</h4><ul class="bullets"><li>Insect, dust &amp; moisture proof</li><li>Die-cast aluminium with durable diffuser</li><li>&Oslash;270mm 30W &middot; &Oslash;370mm 50W &middot; &Oslash;470mm 60W</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/triproof-scenes.jpg" alt="Tri-Proof Ceiling Lights application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/globe-bulbs.jpg" alt="LED globe bulbs with E27 and B22 bases" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-body"><span class="tag">Wide application</span><h4>LED Globe Bulbs</h4><ul class="bullets"><li>E27 screw &amp; B22 pin bases</li><li>5W to 50W</li><li>High CRI, low light decay, excellent heat dissipation</li></ul></div></div>
+          </div>
+        </div>
+
+        <div class="product-group">
+          <h3 class="h3">Specialist Lighting</h3>
+          <div class="grid-2">
+            <div class="product" data-reveal><figure class="media r-1x1 "><img src="assets/images/lighting/sports-hall.jpg" alt="Professional Sports Hall Lights" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/sports-wall-mount.jpg" alt="Double-sided wall mount sports light" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/sports-hanging.jpg" alt="Double-sided hanging sports light" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/sports-vertical.jpg" alt="Single-sided vertical hanging sports light" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">Zero glare</span><h4>Professional Sports Hall Lights</h4><ul class="bullets"><li>Double-sided wall mount 1200&times;290mm, up to 600W</li><li>Double-sided hanging 1200&times;200mm, up to 400W</li><li>Single-sided vertical hanging 1200&times;600mm, up to 240W</li><li>For badminton, basketball, volleyball and swimming</li></ul></div></div>
+            <div class="product" data-reveal><figure class="media r-1x1 "><img src="assets/images/lighting/snooker.jpg" alt="Snooker, Billiard &amp; Pool Table Lights" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/snooker-6piece.jpg" alt="Snooker lights, 6-piece models" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/snooker-8-9piece.jpg" alt="Snooker lights, 8- and 9-piece models" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/billiard-panel.jpg" alt="Billiard table LED panel" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">Tournament-ready</span><h4>Snooker, Billiard &amp; Pool Table Lights</h4><ul class="bullets"><li>Snooker: 240W / 320W / 480W / 720W models</li><li>Billiard standard series 300&times;600mm 40W to 400&times;1200mm 80W</li><li>Uniform, shadow-free, high colour rendering</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/billiard-scenes.jpg" alt="Snooker, Billiard &amp; Pool Table Lights application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+            <div class="product" data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/car-panel.jpg" alt="600&times;1200mm 120W car detailing panel" loading="lazy" onError="{{ imgFail }}"></figure><div class="product-more"><figure class="media r-4x3 "><img src="assets/images/lighting/car-12grid.jpg" alt="12-grid wash light" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/car-16grid.jpg" alt="16-grid wash light" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/car-hex.jpg" alt="Hexagonal honeycomb wash light" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media r-4x3 "><img src="assets/images/lighting/car-workstation.jpg" alt="Rectangular workstation light" loading="lazy" onError="{{ imgFail }}"></figure></div><div class="product-body"><span class="tag">Showrooms &amp; studios</span><h4>Car Beauty &amp; Detailing Lights</h4><ul class="bullets"><li>600&times;1200mm 120W panel</li><li>12- and 16-grid wash lights, hexagonal honeycomb and workstation lights</li><li>Highlights every curve, contour and paint detail</li></ul></div><div class="product-scenes"><span class="tag">Applications</span><figure class="media media--natural "><img src="assets/images/lighting/car-showroom-strip.jpg" alt="Car Beauty &amp; Detailing Lights application scenes" loading="lazy" onError="{{ imgFail }}"></figure><figure class="media media--natural "><img src="assets/images/lighting/car-detailing-scenes.jpg" alt="Car Beauty &amp; Detailing Lights application scenes" loading="lazy" onError="{{ imgFail }}"></figure></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Applications</p>
+          <h2 class="h2">Lighting for every space.</h2>
+        </div>
+        <div class="gallery">
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/sensor-conference.jpg" alt="Conference room with LED panels" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Office conference room</figcaption></div>
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/sensor-lobby.jpg" alt="Lobby with LED lighting" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Lobby &amp; entrance</figcaption></div>
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/spectrum-mall.jpg" alt="Shopping mall atrium lighting" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Shopping mall</figcaption></div>
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/spectrum-showroom.jpg" alt="Car showroom lighting" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Showroom</figcaption></div>
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/thank-you-interior.jpg" alt="Dining interior with linear LED lighting" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Residential dining</figcaption></div>
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/starsky-indoor.jpg" alt="Bedroom with warm downlights" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Hotel &amp; residential</figcaption></div>
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/starsky-outdoor.jpg" alt="Outdoor terrace lighting" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Outdoor terrace</figcaption></div>
+          <div data-reveal><figure class="media r-4x3 "><img src="assets/images/lighting/sports-hall.jpg" alt="Sports hall lighting" loading="lazy" onError="{{ imgFail }}"></figure><figcaption>Sports hall</figcaption></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div data-reveal>
+          <h2 class="h2">Light your project with confidence.</h2>
+          <p>Share your space type, ceiling system and target lux &mdash; we&rsquo;ll recommend the right fixtures, including custom sizes and smart controls.</p>
+        </div>
+        <a class="btn btn--light" data-reveal href="contact">Contact Us <span>&rarr;</span></a>
+      </div>
+    </section>
+  </main>
+
+  <sc-if value="{{ showTop }}">
+    <a class="to-top" href="#top" onClick="{{ toTop }}" aria-label="Back to top"><span aria-hidden="true">&uarr;</span></a>
+  </sc-if>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./"><b>S &amp; B</b><span>Design Limited</span></a>
+          <p class="mt-m">Innovation Materials, Timeless Spaces.<br>Architecture, interior design, materials and smart building solutions.</p>
+        </div>
+        <div>
+          <h4>Hong Kong</h4>
+          <p>10/F Room 1001, Bonham Center,<br>79&ndash;85 Bonham Strand,<br>Sheung Wan, Hong Kong</p>
+          <p class="mt-s"><a href="mailto:samuelng@sandb.hk">samuelng@sandb.hk</a></p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul><li><a href="./">Home</a></li><li><a href="about">About</a></li><li><a href="materials">Materials</a></li><li><a href="lighting">Lighting</a></li><li><a href="smart-building">Smart Building</a></li><li><a href="contact">Contact</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; S &amp; B Design Limited. All rights reserved.</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440}}">
+const Component = window.GlyphLogic(DCLogic);
+</script>
+</body>
+</html>

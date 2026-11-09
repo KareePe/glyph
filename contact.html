@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="./assets/js/script.js"></script>
+</head>
+<body>
+<div class="preloader" id="preloader" role="status" aria-label="Loading">
+  <div class="preloader-inner">
+    <span class="brand"><b>S &amp; B</b><span>Design Limited</span></span>
+    <span class="preloader-bar" aria-hidden="true"><i></i></span>
+  </div>
+</div>
+<x-dc>
+<helmet>
+<title>Contact | S &amp; B Design Limited</title>
+<meta name="description" content="Contact S &amp; B Design Limited in Sheung Wan, Hong Kong to discuss materials, lighting, smart building or design projects.">
+</helmet>
+<div class="page">
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><b>S &amp; B</b><span>Design Limited</span></a>
+      <nav class="nav only-desk" aria-label="Primary">
+        <a href="./">Home</a><a href="about">About</a><a href="materials">Materials</a><a href="lighting">Lighting</a><a href="smart-building">Smart Building</a>
+      </nav>
+      <div>
+        <a class="btn header-cta only-desk" href="contact">Contact</a>
+        <button class="menu-btn only-mob" type="button" onClick="{{ openMenu }}" aria-label="Open menu" aria-controls="site-menu">Menu <i></i></button>
+      </div>
+    </div>
+  </header>
+
+  <sc-if value="{{ menuOpen }}">
+    <div class="menu" id="site-menu">
+      <div class="menu-top">
+        <span class="brand"><b>S &amp; B</b><span>Design Limited</span></span>
+        <button class="menu-close" type="button" onClick="{{ closeMenu }}" aria-label="Close menu">&times;</button>
+      </div>
+      <a href="./" onClick="{{ closeMenu }}">Home</a><a href="about" onClick="{{ closeMenu }}">About</a><a href="materials" onClick="{{ closeMenu }}">Materials</a><a href="lighting" onClick="{{ closeMenu }}">Lighting</a><a href="smart-building" onClick="{{ closeMenu }}">Smart Building</a>
+      <a class="btn" href="contact" onClick="{{ closeMenu }}">Contact Us <span>&rarr;</span></a>
+    </div>
+  </sc-if>
+
+  <main id="top">
+
+    <section class="section">
+      <div class="wrap split split--top">
+        <div data-reveal>
+          <p class="eyebrow">Contact us</p>
+          <h1 class="display">Need a customised solution?</h1>
+          <p class="lead mt-m">As experienced designers and software developers, we tailor our materials, lighting and platform to your specific requirements. Tell us about your project and we&rsquo;ll be in touch.</p>
+          <div class="office mt-l">
+            <h2 class="h3">Hong Kong</h2>
+            <dl>
+              <div><dt>Company</dt><dd>S &amp; B Design Limited</dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:samuelng@sandb.hk">samuelng@sandb.hk</a></dd></div>
+              <div><dt>Address</dt><dd>10/F Room 1001, Bonham Center,<br>79&ndash;85 Bonham Strand,<br>Sheung Wan, Hong Kong</dd></div>
+            </dl>
+            <div class="mt-m"><figure class="media r-16x9 "><img src="assets/images/smart/tech-tile.jpg" alt="Glowing circuit board illustration" loading="lazy" onError="{{ imgFail }}"></figure></div>
+          </div>
+        </div>
+        <div data-reveal>
+          <h2 class="h3">Project enquiry</h2>
+          <p class="small mt-s">Fields marked * are required.</p>
+          <div class="mt-m">
+            <sc-if value="{{ sent }}">
+              <div class="notice" role="status">Thank you. We&rsquo;ll reply from Hong Kong shortly.</div>
+            </sc-if>
+            <sc-if value="{{ showForm }}" hint-placeholder-val="{{ true }}">
+              <form class="form" onSubmit="{{ submit }}">
+                <div class="form-row">
+                  <label>Name *<input type="text" name="name" required placeholder="Full name"></label>
+                  <label>Company<input type="text" name="company" placeholder="Company or practice"></label>
+                </div>
+                <div class="form-row">
+                  <label>Email *<input type="email" name="email" required placeholder="name@company.com"></label>
+                  <label>Phone<input type="tel" name="phone" placeholder="+852 / +66 / +86"></label>
+                </div>
+                <div class="form-row">
+                  <label>Interested in
+                    <select name="interest">
+                      <option>Galaxy Flexible Panel (materials)</option>
+                      <option>Premium LED Lighting</option>
+                      <option>Hybrid BMS &amp; WSmart platform</option>
+                      <option>AI Vision &amp; asset security</option>
+                      <option>Architecture &amp; interior design</option>
+                      <option>Other / not sure yet</option>
+                    </select>
+                  </label>
+                  <label>Project location<input type="text" name="location" placeholder="Hong Kong, Mainland China, Thailand, UK…"></label>
+                </div>
+                <label>Message *<textarea name="message" rows="6" required placeholder="Project type, scope, timeline and what you need."></textarea></label>
+                <button class="btn" type="submit">Send Enquiry <span>&rarr;</span></button>
+              </form>
+            </sc-if>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="wrap split">
+        <div data-reveal><figure class="media r-4x3 "><img src="assets/images/smart/custom-software.jpg" alt="Developer working on custom software" loading="lazy" onError="{{ imgFail }}"></figure></div>
+        <div data-reveal>
+          <p class="eyebrow">Tailored to your industry</p>
+          <p class="quote">From materials to software, we tailor our platform to your requirements.</p>
+          <div class="mt-m"><ul class="chips"><li>Materials</li><li>Lighting</li><li>Building Management</li><li>AI Vision</li><li>Custom Software</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <sc-if value="{{ showTop }}">
+    <a class="to-top" href="#top" onClick="{{ toTop }}" aria-label="Back to top"><span aria-hidden="true">&uarr;</span></a>
+  </sc-if>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./"><b>S &amp; B</b><span>Design Limited</span></a>
+          <p class="mt-m">Innovation Materials, Timeless Spaces.<br>Architecture, interior design, materials and smart building solutions.</p>
+        </div>
+        <div>
+          <h4>Hong Kong</h4>
+          <p>10/F Room 1001, Bonham Center,<br>79&ndash;85 Bonham Strand,<br>Sheung Wan, Hong Kong</p>
+          <p class="mt-s"><a href="mailto:samuelng@sandb.hk">samuelng@sandb.hk</a></p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul><li><a href="./">Home</a></li><li><a href="about">About</a></li><li><a href="materials">Materials</a></li><li><a href="lighting">Lighting</a></li><li><a href="smart-building">Smart Building</a></li><li><a href="contact">Contact</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; S &amp; B Design Limited. All rights reserved.</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440}}">
+const Component = window.GlyphLogic(DCLogic);
+</script>
+</body>
+</html>
