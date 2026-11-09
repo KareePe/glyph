@@ -293,6 +293,18 @@ html.is-loading{overflow:hidden}
 @keyframes to-top-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.to-top{animation:none}}
 
+/* ---------- CTA background photo ---------- */
+.cta{position:relative;overflow:hidden;isolation:isolate}
+.cta-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:grayscale(.3)}
+.cta::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--accent) 40%,rgba(46,85,104,.72))}
+.mb-l{margin-bottom:clamp(40px,5vw,72px)}
+
+/* ---------- Sectors ---------- */
+.sectors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(10px,1.4vw,18px)}
+@media (min-width:900px){.sectors{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.sector{margin:0;position:relative}
+.sector figcaption{position:absolute;left:0;right:0;bottom:0;margin:0;padding:28px 14px 12px;color:#fff;font-size:13px;font-weight:500;letter-spacing:.02em;background:linear-gradient(transparent,rgba(17,26,32,.78))}
+
 /* ---------- Footer ---------- */
 .site-footer{background:var(--dark);color:#C9D5DB;padding:clamp(56px,7vw,96px) 0 32px}
 .footer-grid{display:grid;grid-template-columns:1fr;gap:40px}
